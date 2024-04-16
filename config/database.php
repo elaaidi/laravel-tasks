@@ -138,7 +138,7 @@ return [
         ],
 
         'cache' => [
-            'scheme' => 'tls' 
+            'scheme' => 'tls',
             'host' => env('AZURE_REDIS_HOST', 'msdocs-laravel-cache-22.redis.cache.windows.net'),
             'username' => env('REDIS_USERNAME'),
             'password' => env('AZURE_REDIS_PASSWORD'),
