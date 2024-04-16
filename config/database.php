@@ -46,11 +46,11 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('AZURE_MYSQL_HOST', '127.0.0.1'),
+            'host' => env('AZURE_MYSQL_HOST', 'msdocs-server-22.mysql.database.azure.com'),
             'port' => env('AZURE_MYSQL_PORT', '3306'),
-            'database' => env('AZURE_MYSQL_DBNAME', 'forge'),
-            'username' => env('AZURE_MYSQL_USERNAME', 'forge'),
-            'password' => env('AZURE_MYSQL_PASSWORD', ''),
+            'database' => env('AZURE_MYSQL_DBNAME', 'msdocs-laravel-database-22'),
+            'username' => env('AZURE_MYSQL_USERNAME', 'srcpwfkqre'),
+            'password' => env('AZURE_MYSQL_PASSWORD', 'lZVZ2iX1iPPgz$7G'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -139,11 +139,11 @@ return [
 
         'cache' => [
             'scheme' => 'tls' 
-            'host' => env('AZURE_REDIS_HOST', '127.0.0.1'),
+            'host' => env('AZURE_REDIS_HOST', 'msdocs-laravel-cache-22.redis.cache.windows.net'),
             'username' => env('REDIS_USERNAME'),
             'password' => env('AZURE_REDIS_PASSWORD'),
-            'port' => env('AZURE_REDIS_PORT', '6379'),
-            'database' => env('AZURE_REDIS_DATABASE', '1'),
+            'port' => env('AZURE_REDIS_PORT', '6380'),
+            'database' => env('AZURE_REDIS_DATABASE', '0'),
         ],
 
     ],
